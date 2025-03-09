@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #ff4d4d;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.panda {
+    width: 200px;
+    animation: balancar 2s infinite alternate;
+}
+
+@keyframes balancar {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(5deg); }
+}
+
+.subtitulo {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
+
+.botao {
+    display: inline-block;
+    background-color: white;
+    color: #ff4d4d;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.mensagens {
+    background: white;
+    color: #ff4d4d;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    border-radius: 10px;
+    display: none;
+}
+
+.texto-mensagem {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.assinatura {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+/* Ajustes para telas menores */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .panda {
+        width: 150px;
+    }
+
+    .mensagens {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .texto-mensagem {
+        font-size: 1em;
+    }
+
+    .botao {
+        padding: 8px 15px;
+    }
+}
