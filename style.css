@@ -1,91 +1,84 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ff4d4d;
-    color: white;
+    background-color: #fff5f5;
+    color: #333;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .container {
-    padding: 30px;
+    padding: 20px;
 }
 
 h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.panda {
-    width: 200px;
-    animation: balancar 2s infinite alternate;
-}
-
-@keyframes balancar {
-    0% { transform: rotate(-5deg); }
-    100% { transform: rotate(5deg); }
+    font-size: 2em;
+    color: #cc0000;
+    animation: pulse 1s ease-in-out infinite;
 }
 
 .subtitulo {
     font-size: 1.2em;
-    margin: 15px 0;
+    margin: 10px 0;
 }
 
 .botao {
-    display: inline-block;
-    background-color: white;
-    color: #ff4d4d;
-    padding: 10px 20px;
     text-decoration: none;
+    padding: 10px 20px;
+    background-color: #cc0000;
+    color: white;
     border-radius: 5px;
-    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .mensagens {
-    background: white;
-    color: #ff4d4d;
     padding: 20px;
-    margin: 30px auto;
-    width: 80%;
+}
+
+.homenagem {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
     border-radius: 10px;
-    display: none;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.texto-mensagem {
-    font-size: 1.2em;
-    font-style: italic;
+/* Efeito de fade-in nas homenagens */
+.homenagem.vermelho-forte {
+    border: 3px solid #cc0000; /* Vermelho forte */
+    background-color: #ffcccc; /* Fundo levemente rosado */
+    color: #660000; /* Texto mais escuro para contraste */
 }
 
-.assinatura {
-    font-weight: bold;
-    margin-top: 20px;
+.homenagem.vermelho-escuro {
+    border: 3px solid #990000; /* Vermelho mais escuro */
+    background-color: #ff9999; /* Fundo um pouco mais claro */
+    color: #550000; /* Texto ainda mais escuro */
+}
+
+/* Efeito de pulso no título */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Efeito de balanço nas homenagens */
+.homenagem:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
 }
 
 footer {
-    margin-top: 50px;
-    font-size: 0.9em;
-}
-
-/* Ajustes para telas menores */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    .panda {
-        width: 150px;
-    }
-
-    .mensagens {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .texto-mensagem {
-        font-size: 1em;
-    }
-
-    .botao {
-        padding: 8px 15px;
-    }
+    background-color: #cc0000;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
