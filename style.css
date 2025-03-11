@@ -23,7 +23,7 @@ h1 {
 }
 
 .panda {
-    width: 300px; /* Aumentado para 300px */
+    width: 500px; /* Aumentado para 300px */
     height: auto; /* Mantém a proporção */
     display: block;
     margin: 15px auto; /* Centraliza a imagem */
