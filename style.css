@@ -22,6 +22,14 @@ h1 {
     margin: 10px 0;
 }
 
+.panda {
+    width: 200px; /* Ajuste conforme necessário */
+    height: auto; /* Mantém a proporção */
+    display: block;
+    margin: 10px auto; /* Centraliza a imagem */
+    border-radius: 10px; /* Bordas arredondadas (opcional) */
+}
+
 .botao {
     text-decoration: none;
     padding: 10px 20px;
@@ -48,27 +56,24 @@ h1 {
     transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Efeito de fade-in nas homenagens */
 .homenagem.vermelho-forte {
-    border: 3px solid #cc0000; /* Vermelho forte */
-    background-color: #ffcccc; /* Fundo levemente rosado */
-    color: #660000; /* Texto mais escuro para contraste */
+    border: 3px solid #cc0000;
+    background-color: #ffcccc;
+    color: #660000;
 }
 
 .homenagem.vermelho-escuro {
-    border: 3px solid #990000; /* Vermelho mais escuro */
-    background-color: #ff9999; /* Fundo um pouco mais claro */
-    color: #550000; /* Texto ainda mais escuro */
+    border: 3px solid #990000;
+    background-color: #ff9999;
+    color: #550000;
 }
 
-/* Efeito de pulso no título */
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
     100% { transform: scale(1); }
 }
 
-/* Efeito de balanço nas homenagens */
 .homenagem:hover {
     transform: scale(1.03);
     transition: transform 0.3s ease-in-out;
