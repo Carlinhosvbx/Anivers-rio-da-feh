@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function criarPandaSubindo() {
     const panda = document.createElement("img");
-    panda.src = "panda.png"; // Certifique-se de que a imagem está no mesmo diretório
+    panda.src = "file-SSHJ7NoshtaWPmRTsTYHny.webp"; // Certifique-se de que a imagem está no mesmo diretório
     panda.classList.add("panda-subindo");
 
     // Posição aleatória na tela
