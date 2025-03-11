@@ -23,11 +23,12 @@ h1 {
 }
 
 .panda {
-    width: 200px; /* Ajuste conforme necessário */
+    width: 300px; /* Aumentado para 300px */
     height: auto; /* Mantém a proporção */
     display: block;
-    margin: 10px auto; /* Centraliza a imagem */
+    margin: 15px auto; /* Centraliza a imagem */
     border-radius: 10px; /* Bordas arredondadas (opcional) */
+
 }
 
 .botao {
