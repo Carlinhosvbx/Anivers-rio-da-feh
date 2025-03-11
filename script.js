@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 500 * index); // Pequeno atraso entre cada uma
     });
 });
+
 function criarPandaSubindo() {
     const panda = document.createElement("img");
     panda.src = "panda.png"; // Certifique-se de que a imagem está no mesmo diretório
