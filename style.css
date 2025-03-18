@@ -1,11 +1,10 @@
-/* Estilos principais */
+/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #ffe6e6;
-    color: #333;
     margin: 0;
     padding: 0;
+    background-color: #ffebee; /* Fundo suave */
+    text-align: center;
 }
 
 /* Container principal */
@@ -13,61 +12,74 @@ body {
     padding: 20px;
 }
 
-/* Imagem do panda */
+h1 {
+    color: #d32f2f; /* Vermelho escuro */
+}
+
 .panda {
-    width: 300px;
+    width: 350px;
     height: auto;
-    margin: 20px 0;
+    margin: 20px auto;
+    display: block;
 }
 
 /* Botão */
 .botao {
     display: inline-block;
-    background-color: #ff4d4d;
-    color: white;
     padding: 10px 20px;
+    background-color: #d32f2f;
+    color: white;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: bold;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .botao:hover {
-    background-color: #cc0000;
+    background-color: #b71c1c;
 }
 
 /* Seção de mensagens */
 .mensagens {
-    margin-top: 40px;
+    margin-top: 30px;
     padding: 20px;
-    background-color: #fff;
+    background: white;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Novo texto destacado */
-.mensagem-destacada {
-    background-color: #ffcccc;
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+h2 {
+    color: #c62828;
 }
 
-.mensagem-destacada h3 {
-    color: darkred;
-}
-
-.mensagem-destacada p {
+/* Estilos para homenagens */
+.homenagem {
+    padding: 15px;
+    margin: 15px auto;
+    width: 80%;
+    border-radius: 8px;
     font-size: 16px;
-    color: #222;
+    line-height: 1.6;
+    color: white;
+    text-align: left;
+}
+
+/* Diferentes tonalidades de vermelho */
+.vermelho-forte {
+    background-color: #d32f2f;
+}
+
+.vermelho-escuro {
+    background-color: #b71c1c;
+}
+
+.vermelho-medio {
+    background-color: #e53935;
 }
 
 /* Rodapé */
 footer {
-    margin-top: 30px;
+    margin-top: 20px;
     padding: 10px;
-    background-color: #ff4d4d;
+    background-color: #d32f2f;
     color: white;
-    font-weight: bold;
 }
